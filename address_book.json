@@ -1,0 +1,14 @@
+[
+    {
+        "email": "jane.doe@example.com",
+        "ext": "001",
+        "name": "Jane Doe",
+        "number": "+1 206 555 0001"
+    },
+    {
+        "email": "john.doe@example.com",
+        "ext": "007",
+        "name": "John Doe",
+        "number": "+1 206 555 0007"
+    }
+];

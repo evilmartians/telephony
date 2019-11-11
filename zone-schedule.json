@@ -1,0 +1,19 @@
+[
+    {
+        "email": "jane.doe@example.com",
+        "timeZone": "America/New_York",
+        "schedule": {
+            "All": [10, 20],
+            "Sun": false,
+            "Sat": [11, 15]
+        }
+    },
+    {
+        "email": "john.doe@example.com",
+        "timeZone": "Europe/Moscow",
+        "schedule": {
+            "All": [10, 20],
+            "Sun": null
+        }
+    }
+]

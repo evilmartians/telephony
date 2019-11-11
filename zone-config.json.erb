@@ -1,0 +1,34 @@
+{
+    // "contry" is used to specify progress tone. Can be US or RU
+    "country": "US",
+    "messenger": {
+        // "Local" timezones to display the time in (for emails)
+        "displayTimezones": ["America/New_York", "Europe/Moscow"],
+        // Mandrill API key for sending emails
+        "mandrill": {
+            "apiKey": <%= ENV['MANDRILL_API_KEY'].to_json %>
+        },
+        // Vox Implant Settings
+        "voxImplant": {
+            "accountId": <%= ENV['VOX_ACCOUNT_ID'].to_json %>,
+            "apiKey": <%= ENV['VOX_API_KEY'].to_json %>
+        },
+        // Sends failed calls reports and other stuff via Email/SMS
+        // NB: VoxImplant API is used for sending SMS
+        "sender": {
+            "email": "sender@example.com",
+            "name": "Evil Martians Telephony",
+            "number": "+1 206 555 0007"
+        },
+        // Receives failure reports
+        "defaultReceiver": {
+            "name": "Main Office",
+            "email": "office@example.com"
+        }
+    },
+    // Voice clips base URL. See examples folder for reference!
+    // You can use Amazon S3 or simular cloud storage with public HTTP access.
+    "baseMsgClipUrl": "https://path/to/clips/en",
+    // Additional SFX samples.
+    "baseSfxClipUrl": "https://path/to/clips/sfx"
+}

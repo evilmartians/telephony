@@ -1,0 +1,6 @@
+en:
+  errors:
+    valid_working_hours?: Must be false, null, or Array of 2 items, each of them is a number from 0 to 24
+    email?: Invalid email
+    phone_number?: Must start with '+' following by digits
+    time_zone?: Invalid time zone name

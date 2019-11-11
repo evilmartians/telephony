@@ -1,0 +1,24 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.6.2
+        environment:
+          BUNDLER_VERSION: 2.0.1
+          BUNDLE_JOBS: 3
+          BUNDLE_PATH: vendor/bundle
+    steps:
+      - checkout
+      - restore_cache:
+          key: bundle-v1-{{ checksum "Gemfile.lock" }}
+      - run: gem install bundler
+      - run: bundle check || bundle install --without=development
+      - save_cache:
+          key: bundle-v1-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+      - run: |
+          if [[ ${CIRCLE_BRANCH} != "master" ]]; then
+            export DEPLOY_DRY_RUN=1
+          fi
+          bundle exec rake deploy:all
