@@ -1,6 +1,6 @@
 # Evil Martians Telephony
 
-A cloud-based Martian swiss army knife for voice calls, VoIP, conferencing, and voicemail. Powered by [VoxImplant](https://voximplant.io?utm_source=evilmartians-telephony).
+A cloud-based Martian swiss army knife for voice calls, VoIP, conferencing, and voicemail. Powered by [VoxImplant](https://voximplant.com?utm_source=evilmartians-telephony).
 
 <a href="https://evilmartians.com/?utm_source=telephony">
   <img src="https://evilmartians.com/badges/sponsored-by-evil-martians.svg"
@@ -11,7 +11,7 @@ A cloud-based Martian swiss army knife for voice calls, VoIP, conferencing, and 
 
 The code is for an open source version of Evil Martians' very own telephony platform that runs all [our phone numbers](https://evilmartians.com/talk-to-us).
 
-This is a swiss army knife for everything we do with our phone numbers at Evil Martians. It currently runs on the [VoxImplant](https://voximplant.io) cloud platform, is implemented in JavaScript, and is designed to run via continuous integration and continuous deployment tools.
+This is a swiss army knife for everything we do with our phone numbers at Evil Martians. It currently runs on the [VoxImplant](https://voximplant.com) cloud platform, is implemented in JavaScript, and is designed to run via continuous integration and continuous deployment tools.
 
 You can use it to build your simple telephony solutions, with one or multiple office locations, managers scheduled to answer a call, conferencing, and short numbers.
 
